@@ -1,0 +1,20 @@
+meta {
+  name: Schedule Notification
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/notification
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "date": "2024-07-08T16:52:00",
+    "destination": "teste@email.com",
+    "message": "Seja bem vindo",
+    "channel": "EMAIL"
+  }
+}
